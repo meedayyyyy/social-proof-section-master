@@ -13,20 +13,22 @@
 
 body{
     font-family: 'league spartan';
-    margin: 40px auto;
-    width: 80%;
+    margin: 40px 16px;
 }
 
 .main-heading{
     font-size: 24px;
     font-weight: 600;
     color: var(--primary-color);
+    margin: 16px;
+    letter-spacing: -1px;
 }
 
 
 p{
     font-size: 16px;
     color: var(--secondary-color);
+    line-height: 1.2rem;
 }
 
 .rating-card{
@@ -37,6 +39,7 @@ p{
 }
 .rating-card p{
     color: var(--primary-color);
+    margin: 4px;
 }
 
 .card{
@@ -56,7 +59,7 @@ p{
 .top{
     display: flex;
     flex-direction: column;
-    /* width: 80%; */
+    /* width: 100%; */
 
     align-items: center;
     text-align: center;
@@ -65,5 +68,26 @@ p{
 .top article{
     display: flex;
     flex-direction: column;
-    width: 100%;
+}
+
+.customer{
+    display: flex;
+    align-items: top;
+    margin: 8px auto;
+}
+
+.customer img{
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 8px;
+}
+
+.star img{
+    height: 12px;
+    margin: 2px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--pink-color);
 }
