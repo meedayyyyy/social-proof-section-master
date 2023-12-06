@@ -108,6 +108,7 @@ flex-direction: row;        /* grid-template-columns: 2fr 3fr; */
         text-align: left;
         /* flex-basis: 30%; */
         justify-content: space-between;
+        
     }
 
     .rating-card{
