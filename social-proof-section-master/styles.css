@@ -229,7 +229,7 @@ margin: 8px 0;
 .bottom{
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
+    gap: 16px;
 }
 
 .card{
@@ -250,9 +250,59 @@ margin: 8px 0;
     margin-bottom: 24px;
 }
 .customer h4, .card p{
-    color: #ffff;
+    color: #fff;
 }
 
-.verified{
+.card .verified{
     color: var(--pink-color);
 }
+
+.attribution{
+    text-align: center;
+    padding-top: 8px;
+}
+
+/* media query */
+@media(min-width: 550px){
+    .rating-card{
+        flex-direction: row;
+        column-gap: 8px;
+    }
+
+} 
+
+@media(min-width: 1000px){
+    body{
+        font-size: 18px;
+    }
+    .top{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20%;
+        margin-bottom: 20px;
+    }
+    .rating-card:nth-of-type(1){
+       position: relative;
+       right: 200px;
+    }
+    .rating-card:nth-of-type(2){
+        position: relative;
+        right: 100px;
+     }
+     .rating{
+        flex: 1 1 30%;
+     }
+     .top article{
+        flex: 1 1 30%;
+        text-align: left;
+     }
+     .main-heading{
+        margin-bottom: 24px;
+     }
+     .bottom{
+        flex-direction: row;
+    
+     }
+} 
+
